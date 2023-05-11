@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: cursive;
+}
+
+.container {
+  background-color: blanchedalmond;
+}
+
+h2 {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  color: purple;
+}
+
+h1 {
+  font-size: 80px;
+  color: purple;
+  background-color: rgba(211, 11, 201, 0.3);
+  letter-spacing: 2px;
+}
+
+.info-second {
+  width: 500px;
+  height: 200px;
+  border: 2px solid purple;
+  display: none;
+}
+
+.info-first {
+  width: 500px;
+  height: 200px;
+  border: 2px solid purple;
+  display: none;
+}
+
+.product {
+  color: purple;
+}
+
+.para {
+  color: rgba(211, 11, 201);
+}
+
+.btn {
+  background-color: purple;
+  color: white;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: 4px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid purple;
+}
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-image: url("https://shopoptica.com/wp-content/uploads/2022/04/p-277.jpg ");
+  background-size: cover;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-image: url("https://cdn.shopify.com/s/files/1/0276/3787/4826/products/Prada_-_STG_033_-_Rs_1250_-_1950_1024x1024.jpg?v=1598281064");
+  background-size: cover;
+}
+
+.active-left .left {
+  width: 75%;
+}
+
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .left {
+  width: 25%;
+}
+
+.active-right .right {
+  width: 75%;
+}
+
+.left,
+.right {
+  transition: width 2s ease-in-out;
+}
